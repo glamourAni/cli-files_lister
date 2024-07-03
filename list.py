@@ -98,7 +98,7 @@ def list_files(path=os.getcwd(), all=False, directories=False, long=False):
             #store modification time
             date_of_modification.append(ctime(file_info.st_mtime))
 
-        fill_cells_with_spaces(permissions, links, size, uid, gid, date_of_modification)
+        #fill_cells_with_spaces(permissions, links, size, uid, gid, date_of_modification)
         columns = {"Permission": permissions, 
                    "No. of links": links, 
                    "Size": size,
